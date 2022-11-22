@@ -1,0 +1,37 @@
+activation : gelu
+batch_size : 128
+batchnorm : False
+depth : 8
+dropout : 0
+epochs : 5000
+filename : N_AG.pt
+in_N : 1
+initial_lr : 0.001
+loss_fn : mse
+lr_halflife : 500
+mean_x : tensor([2.5000], device='cuda:0')
+mean_y : tensor([-0.1692], device='cuda:0')
+mean_yDDot : tensor([-2.0735], device='cuda:0')
+mean_yDot : tensor([0.2570], device='cuda:0')
+metamodeling : False
+num_workers : 2
+optimizer : radam
+out_N : 1
+param_init : default
+persistent_workers : True
+pin_memory : True
+print_every : 100
+reg_lambda : 0
+save : True
+save_every : 25
+std_x : tensor([2.8911], device='cuda:0')
+std_y : tensor([1.0063], device='cuda:0')
+std_yDDot : tensor([103.7520], device='cuda:0')
+std_yDot : tensor([5.0257], device='cuda:0')
+training_time : 586.1703581809998
+valid_measure : mse
+width : 350
+yddot_training_loss_history : [10758.01367188 10758.01367188 10758.01269531 ...   706.78857422
+   706.40179443   707.7767334 ]
+yddot_validation_loss_history : [10758.01367188 10758.01367188 10758.01367188 ...   703.28381348
+   703.31933594   704.11773682]
