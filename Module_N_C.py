@@ -65,18 +65,15 @@ class MLP(torch.nn.Module):
         # uniform(-1/sqrt(in_features), 1/sqrt(in_features)). For details, see
         # https://github.com/pytorch/pytorch/issues/57109
         if isinstance(layer, (torch.nn.Linear)):
-            # torch.nn.init.kaiming_normal_(layer.weight, a=0, nonlinearity='relu') # 기존 사용
-            torch.nn.init.kaiming_uniform_(layer.weight, a=np.sqrt(5), nonlinearity='leaky_relu')  # 파이토치 기본
+            # torch.nn.init.kaiming_normal_(layer.weight, a=0, nonlinearity='relu')
+            torch.nn.init.kaiming_uniform_(layer.weight, a=np.sqrt(5), nonlinearity='leaky_relu')
             if layer.bias is not None:
                 torch.nn.init.zeros_(layer.bias)
     
     def __initializer_He(self, layer):
-        # Setting a=sqrt(5) in kaiming_uniform is the same as initializing with
-        # uniform(-1/sqrt(in_features), 1/sqrt(in_features)). For details, see
-        # https://github.com/pytorch/pytorch/issues/57109
         if isinstance(layer, (torch.nn.Linear)):
-            torch.nn.init.kaiming_normal_(layer.weight, a=0, nonlinearity='relu')  # 기존 사용
-            # torch.nn.init.kaiming_uniform_(layer.weight, a=np.sqrt(5), nonlinearity='leaky_relu') # 파이토치 기본
+            torch.nn.init.kaiming_normal_(layer.weight, a=0, nonlinearity='relu')
+            # torch.nn.init.kaiming_uniform_(layer.weight, a=np.sqrt(5), nonlinearity='leaky_relu')
             if layer.bias is not None:
                 torch.nn.init.zeros_(layer.bias)
     
