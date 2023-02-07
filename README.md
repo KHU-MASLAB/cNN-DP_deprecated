@@ -1,4 +1,5 @@
-# cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics
+## This repository is deprecated. Please visit https://github.com/KHU-MASLAB/cNN-DP for code.
+### cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics
 *Lee, Hyeonbeen and Han, Seongji and Choi, Hee-Sun and Kim, Jin-Gyun, cNN-DP: Composite Neural Network with Differential Propagation for Impulsive Nonlinear Dynamics. Available at SSRN: https://ssrn.com/abstract=4296911*
   
 ![NN_conv_autograd](https://user-images.githubusercontent.com/78078652/204765197-5df81c5c-53c0-407f-988c-9ff8e68fadff.png)
